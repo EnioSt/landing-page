@@ -1,0 +1,47 @@
+.section {
+    height: 90vh; /* Ocupa quase toda a tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--section-bg); /* Fundo genérico */
+    padding: 50px 20px;
+  }
+  
+  .section-content {
+    display: flex;
+    align-items: center;
+    max-width: var(--max-width);
+    gap: 40px;
+  }
+  
+  .text {
+    flex: 1;
+  }
+  
+  .text h2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+  }
+  
+  .text p {
+    font-size: 1.5rem;
+    color: var(--text-color);
+  }
+  
+  .image {
+    flex: 1;
+  }
+  
+  .image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .section-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  

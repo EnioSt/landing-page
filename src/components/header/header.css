@@ -1,0 +1,76 @@
+.header {
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center; /* Mantém os itens no centro verticalmente */
+  justify-content: space-between;
+  padding: 0 15px;
+  height: 60px; /* Reduz a altura do header */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+body {
+  margin: 0; /* Remove qualquer margem extra */
+  padding: 0; /* Remove padding extra */
+}
+
+#inicio, #sobre, #contato {
+  padding-top: 80px; /* Empurra as seções para baixo sem criar faixa branca */
+}
+
+.container-header {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+  
+  .logo {
+    max-height: 50px;
+    max-width: 100px;
+    margin-left: 10px;
+  }
+
+  .nav-menu {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .nav-menu a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      height: auto;
+      flex-direction: column;
+      padding: 10px 0;
+    }
+
+    .container-header {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .logo {
+      max-height: 35px;
+      margin-bottom: 10px;
+    }
+
+    .nav-menu {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  

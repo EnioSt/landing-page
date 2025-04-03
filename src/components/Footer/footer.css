@@ -1,0 +1,10 @@
+.rodape {
+    background-color: var(--primary-color); /* Correção da variável */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-style: italic; /* Texto em itálico */
+    font-size: 1.2rem;
+    position: relative;
+    width: 100%;
+}

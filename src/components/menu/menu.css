@@ -1,0 +1,27 @@
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-menu li {
+    display: inline;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .nav-menu a:hover {
+    color: var(--secondary-color);
+  }
+  
+  @media (max-width: 768px) {  
+    .nav-menu {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
