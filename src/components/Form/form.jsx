@@ -25,7 +25,7 @@ const Form = () => {
     
       const handleSubmit = (e) => {
         e.preventDefault();
-        const numeroWhatsApp = "17992097230"; // Substitua pelo seu número com DDD
+        const numeroWhatsApp = "17997553609"; // Substitua pelo seu número com DDD
         const mensagem = gerarMensagem();
         const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
 
