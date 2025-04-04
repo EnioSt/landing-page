@@ -19,7 +19,7 @@ body {
 }
 
 #inicio, #sobre, #contato {
-  padding-top: 80px; /* Empurra as seções para baixo sem criar faixa branca */
+  padding-top: 100px; /* Empurra as seções para baixo sem criar faixa branca */
 }
 
 .container-header {
